@@ -5,6 +5,7 @@ import java.util.Arrays;
  */
 public class StringParser {
 	public static final String[] OPERATORS = {"+", "-", "*", "/"};
+
 	public int[] getOperands(String formula) {
 		StringBuilder operands = new StringBuilder();
 		for (char ch : formula.toCharArray()) {
@@ -14,13 +15,12 @@ public class StringParser {
 		return Arrays.stream(op).mapToInt(Integer::parseInt).toArray();
 	}
 
-	public char getOperand(String formula) {
+	public String getOperand(String formula) {
 		for (String ch : OPERATORS) {
 			if (formula.contains(ch)) {
-				return ch.charAt(0);
+				return String.valueOf(ch.charAt(0));
 			}
 		}
 		throw new IllegalArgumentException();
 	}
-
 }

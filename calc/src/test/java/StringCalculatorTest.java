@@ -9,11 +9,11 @@ import static org.hamcrest.core.IsEqual.equalTo;
  */
 public class CalculatorTest {
 
-	private Calculator calculator;
+	private StringCalculator calculator;
 
 	@Before
 	public void init() {
-		calculator = new Calculator();
+		calculator = new StringCalculator();
 	}
 
 	@Test
