@@ -7,7 +7,7 @@ import static org.hamcrest.core.IsEqual.equalTo;
 /**
  * @author delf
  */
-public class CalculatorTest {
+public class StringCalculatorTest {
 
 	private StringCalculator calculator;
 
